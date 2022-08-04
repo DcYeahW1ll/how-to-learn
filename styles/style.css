@@ -1,31 +1,367 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2 ;
+  position: relative;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  position: absolute;
+  height: 32px;
+  width: 228px;
+  z-index: 2;
+}
+
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  width: 730px;
+}
+
+ .header__title-text { 
+  text-align: left;
+  padding-left: 64px;
+  line-height: 92px;
+  font-size: 102px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.header__main-illustration {
+  position: absolute;
+  height: 608px;
+  width: 765px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .header__square-pic {
-  height: 568px;
   width: 568px;
+  height: 568px;
+  background-color: #2F80ED;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+
 }
 
-/* и элемента с модификатором вида ключ-значение */
+.description {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.two-columns {
+  display: flex;
+  
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: auto;
+  margin-left: 0;
+  margin-top: 0;
+  font-weight: normal;
+  color: blue;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+ }
+
+.two-columns__paragraph {
+  display: flex;
+  width: auto;
+  list-style-type: none;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  flex-direction: row;
+  gap: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+}
+
+.table {
+  width: 1100px;
+  margin-top: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.feynman {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  height: 890px;
+}
+
+.feynman__title-block{
+  display: flex;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  width: 648px;
+  margin: auto;
+  margin-top: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: auto;
+  margin-top: 70px;
+  z-index: 1;
+  text-align: center;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  text-decoration: none;
+}
+
+.feynman__illustration {
+  position: absolute;
+  height: 637px;
+  width: 867px;
+  left: 0;
+  bottom: 0;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.sectiom-title_theme_dark {
+  margin-top: 90px;
+  color: white;
+}
+
+.sectiom-subtitle_theme_dark {
+  margin-top: 20px;
+  color: white;
+}
+
+.table__heading_theme_dark {
+  color: white;
+}
+
+.table__text_theme_dark {
+  color: white;
+}
+
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  height: 877px;
+  width: 877px;
+  right: -210px;
+  z-index: 0;
+  margin: 0;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  }
+
+.footer__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  flex-grow: 1;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-basis: 711px;
+  
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.logo_place_footer {
+  display: flex;
+  flex-direction:row ;
+  justify-content: start;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.column-link {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  gap: 10px;
+}
+
+.footer__social-icon {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.social-icon {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  gap: 10px;
+  width: 16px;
+  height: 16px;
 }
