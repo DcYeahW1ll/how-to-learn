@@ -10,7 +10,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: #f2f2f2;
+  background-color: #f2f2f2 ;
   position: relative;
 }
 
@@ -30,9 +30,6 @@
   display: flex;
   align-items: center;
   width: 730px;
-}
-
- .header__title-text { 
   text-align: left;
   padding-left: 64px;
   line-height: 92px;
@@ -91,7 +88,9 @@
   margin: auto;
   margin-left: 0;
   margin-top: 0;
+  font-weight: normal;
   color: blue;
+  border: 1px solid red;
 }
 
 .two-columns__main-text {
@@ -102,6 +101,7 @@
   gap: 30px;
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
  }
 
 .two-columns__paragraph {
@@ -185,10 +185,7 @@
   flex-direction: column;
   background-color: #f2f2f2;
   height: 890px;
-}
-
-.feynman__title-block{
-  display: flex;
+  z-index: 1;
 }
 
 .feynman__title {
@@ -197,9 +194,10 @@
   font-weight: 600;
   width: 648px;
   margin: auto;
-  margin-top: 0;
-  z-index: 1;
+  margin-top: 100px;
+  z-index: 2;
   text-align: center;
+  border:  1px solid red ;
 }
 
 .feynman__subtitle {
@@ -208,7 +206,7 @@
   font-weight: normal;
   margin: auto;
   margin-top: 70px;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
 }
 
@@ -220,6 +218,7 @@
   top: 50%;
   right: 40px;
   text-decoration: none;
+  z-index: 2;
 }
 
 .feynman__illustration {
@@ -229,7 +228,7 @@
   left: 0;
   bottom: 0;
   flex-wrap: wrap;
-  z-index: 0;
+  z-index: -1;
 }
 
 .kaufman {
@@ -239,6 +238,7 @@
   overflow: hidden;
   padding-bottom: 90px;
   position: relative;
+  border: 1px solid red;
 }
 
 .sectiom-title_theme_dark {
@@ -263,6 +263,7 @@
   width: 200px;
   margin-top: 80px;
   z-index: 1;
+  border: 1px solid red;
 }
 
 .kaufman__triangle {
@@ -312,7 +313,7 @@
 
 .logo_place_footer {
   display: flex;
-  flex-direction:row;
+  flex-direction:row ;
   justify-content: start;
 }
 
@@ -336,6 +337,14 @@
   flex-direction: column;
   padding-left: 0;
   margin: 0;
+  gap: 10px;
+}
+
+.footer__column-link {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  color: white;
   gap: 10px;
 }
 
