@@ -10,7 +10,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: #f2f2f2 ;
+  background-color: #f2f2f2;
   position: relative;
 }
 
@@ -85,7 +85,7 @@
 
 .two-columns {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
@@ -356,7 +356,7 @@
   text-decoration: none;
   color: white;
   gap: 10px;
-  align-items: center
+  align-items: center;
 }
 
 .footer__social-icon {
