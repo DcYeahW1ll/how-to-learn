@@ -1,0 +1,8 @@
+.resorces__link {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.resorces__link:hover {
+  opacity: 0.5;
+}

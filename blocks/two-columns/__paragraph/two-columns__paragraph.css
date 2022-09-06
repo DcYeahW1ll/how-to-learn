@@ -1,0 +1,10 @@
+.two-columns__paragraph {
+  width: auto;
+  list-style-type: none;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  flex-direction: row;
+  gap: 0;
+  margin: 0;
+}
