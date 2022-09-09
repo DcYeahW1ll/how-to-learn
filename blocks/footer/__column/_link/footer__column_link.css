@@ -1,4 +1,4 @@
-.footer__column-link {
+.footer__column_link {
   display: flex;
   text-decoration: none;
   color: white;
@@ -10,6 +10,6 @@
   opacity: 1;  
   }
 
-.footer__column-link:hover {
+.footer__column_link:hover {
   opacity: 0.5;  
 }
