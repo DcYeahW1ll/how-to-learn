@@ -1,8 +1,8 @@
-.header__square-pic_rotation {
+.rotation__header__square-pic {
   transition: all 20s linear;
   transform: rotate(0deg);
 }
 
-.header__square-pic_rotation:hover {
+.rotation__header__square-pic:hover {
   animation: rotation 20s infinite linear;
 }
