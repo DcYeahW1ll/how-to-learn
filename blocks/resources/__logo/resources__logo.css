@@ -5,6 +5,6 @@
   opacity: 1;
 }
 
-.resources__logo {
+.resources__logo:hover {
   opacity: 0.5;
 }
