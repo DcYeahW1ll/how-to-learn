@@ -1,0 +1,8 @@
+.rotation__kaufman__triangle {
+  transition: all 20s linear;
+  transform: rotate(0deg);
+}
+
+.rotation__kaufman__triangle:hover {
+  animation: rotation 20s infinite;
+}
