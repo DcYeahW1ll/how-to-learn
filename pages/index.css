@@ -78,9 +78,9 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__column/footer__column.css);
-@import url(../blocks/footer/__column/_heading/footer__column_heading.css);
-@import url(../blocks/footer/__column/_links/footer__column_links.css);
-@import url(../blocks/footer/__column/_link/footer__column_link.css);
+@import url(../blocks/footer/__column/_content/_heading/footer__column_content_heading.css);
+@import url(../blocks/footer/__column/_content/_links/footer__column_content_links.css);
+@import url(../blocks/footer/__column/_content/_link/footer__column_content_link.css);
 @import url(../blocks/logo/_place/logo_place_footer.css);
 @import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
 @import url(../blocks/footer/__column/_content/footer__column_content_info.css);
